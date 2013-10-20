@@ -1,0 +1,16 @@
+
+.class{
+	margin: 5em !important;
+	padding: 5em;
+}
+
+.class dt{
+	margin-left: 5em;
+	font: 1.5em Arial;
+}
+
+.class dd{
+	font: 1.2em Verdana;
+
+
+}

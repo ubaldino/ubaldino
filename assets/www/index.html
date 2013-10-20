@@ -1,0 +1,1008 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yo Soy Bolivia</title>
+<link href="js/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="js/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/style.css">
+<link href="js/themes/fernando.min.css" rel="stylesheet" type="text/css"/>
+<link href="js/themes/fernando.css" rel="stylesheet" type="text/css"/>
+
+<script src="js/jquery-1.6.4.min.js"></script>
+<!-- <script src="js/jquery-1.10.2.min.js"></script> -->
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/json2.js"></script>
+<script src="js/script.js"></script>
+<script src="js/event-change.js"></script>
+</head> 
+<body>
+<div data-role="page" id="page" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Yo Soy Bolivia    </h1>
+        <h1 ><img class="ui-li-icon" src="img/bandera-bolivia.png" style="max-width:20%; "></h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">	
+			<li><a href="#mapa-bolivia" data-role="button">Mi Bolivia</a></li>  
+            <li><a href="#formulario-registro" data-role="button">Registrarte</a></li>  
+            <li><a href="#evento-registro" data-role="button">Eventos</a></li>            
+            <!-- <input type="button" id="traer" value="Saludar"> 
+            <div id="datos" class="parrafoAjax"></div> -->
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">		
+        <h5>Made in Bolivia</h5>
+	</div>
+</div>
+
+<div data-role="page" id="mapa-bolivia" data-add-back-btn="true" >
+	<div data-role="header"  data-position="fixed">
+		<h1>Mapa Bolivia</h1>        
+	</div>
+	<div data-role="content">   
+              <img src="img/bolivia.png" alt="bolivia mi pais" usemap="#Map" title="bolivia mi pais"/>
+            <map name="Map" id="Map">
+              <area shape="poly" coords="30,85,178,13,190,35,57,110" href="#pando" />
+              <area shape="poly" coords="82,108,126,133,90,228,126,310,40,354,46,145" href="#lapaz" />
+              <area shape="poly" coords="127.118,184,48,220,129,330,172,253,204,264,258,150,228,108,184" href="#beni" />
+              <area shape="poly" coords="270,211,370,174,403,291,477,301,472,470,277,412," href="#santacruz" />
+              <area shape="poly" coords="142,303,214,292,228,379,136,337" href="#cochabamba" />
+              <area shape="poly" coords="52,364,135,364,139,412,79,417," href="#oruro" />
+              <area shape="poly" coords="70,451,181,414,190,517,94,540" href="#potosi" />
+              <area shape="poly" coords="199,451,219,424,199,391,240,409,256,463,316,472,316,480,195,475" href="#chuquisaca" />
+              <area shape="poly" coords="214,495,316,499,301,528,208,528" href="#tarija" />
+            </map>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div> 
+ <div data-role="page" id="formulario-registro">
+	<div data-role="header">
+		<h1>Página uno</h1>
+	</div>
+	<div data-role="content" >	
+            <form action="" method="">
+                <label for="name"><font><font>Nombre:</font></font></label>
+                <input type="text" name="name" id="name">
+                <label for="password" class="ui-input-text"><font><font>Contraseña:</font></font></label>
+                <input type="password" name="password" id="password" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+                <fieldset data-role="controlgroup">
+                    <legend>Ciudad:</legend>                
+                    <select name="select-ciudad" id="select-ciudad">
+                        <option>Ciudad</option>
+                        <option value="cbba">Cochabamba</option>
+                        <option value="oruro">Oruro</option>
+                        <option value="lapaz">La Paz</option>
+                        <option value="santacruz">Santa Cruz</option>
+                        <option value="potosi">Potosi</option>
+                        <option value="beni">Beni</option>
+                        <option value="pabdo">Pando</option>
+                        <option value="tarija">Tarija</option>
+                        <option value="chuquisaca">Chuquisaca</option>
+                    </select>
+                 </fieldset>                  
+                 <input type="submit" value="Enviar">                               
+           	 </form>  
+	</div>
+	<div data-role="footer" data-position="fixed" >
+		<h4>Maden in Bolivia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="evento-registro">
+	<div data-role="header">
+		<h1>Registro Evento</h1>
+	</div>
+	<div data-role="content" >	
+            <form action="" method="">
+                <label for="name-evento"><font><font>Nombre Evento:</font></font></label>
+                <input type="text" name="name" id="name">
+                <div data-role="data-evento" class="ui-field-contain">
+                <label for="date-evento" class="ui-input-text">Date:</label>
+                <input type="date" name="date-evento" id="date-evento" value="" class="nombre del evento">
+                </div>
+                <label for="descripcion-evento"><font><font>Descripcion Ecento:</font></font></label>                  <input type="text" name="descripcion-evento" id="descripcion-evento">
+                 <input type="submit" value="Enviar">                               
+           	 </form>  
+	</div>
+	<div data-role="footer" data-position="fixed" >
+		<h4>Maden in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="cochabamba" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1 ><img class="ui-li-icon" src="img/bandera-cbba.jpg" style="max-width:20%; ">  Cochabamba</h1>
+	</div>    
+	<div  data-role="navbar">	        
+        <ul data-role="listview" >	
+            <li><a href="#cochabamba_c" class="ui-btn-active" data-theme="a" >Clima</a></li>
+            <li><a href="#cochabamba_t"class="ui-btn-active" data-theme="a">Lugares Turisticos</a></li>
+            <li><a href="#cochabamba_co"class="ui-btn-active" data-theme="a">Donde Comer</a></li>
+         </ul>        
+	</div>
+    <div>
+    	<ul>            
+            <div><img class="ui-li-icon" src="img/cochabamba.png" style="max-width:50%; "></div>
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Cochabamba fue creado por Decreto Supremo del 23 de enero de 1826, por el Mariscal Antonio José de Sucre.
+
+Abarca una superficie de 56.631 km2 y está formado por 16 provincias.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="oruro" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1><img class="ui-li-icon" src="img/bandera-oruro.jpg" style="max-width:20%; ">  Oruro</h1>
+	</div>
+	<div data-role="navbar">	
+		Contenido
+        <ul data-role="listview">	
+            <li><a href="#oruro_c" id="oruro_bt" >Clima</a></li>
+            <li><a href="#oruro_t">Lugares Turisticos</a></li>
+            <li><a href="#oruro_co">Donde Comer</a></li>
+         </ul> 		
+	</div>
+    <div>
+    	<ul>
+            <div><img class="ui-li-icon" src="img/mapa-oruro.jpg" style="max-width:50%; "></div>
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Oruro fue creado por un Decreto Supremo, el 5 de septiembre de 1826, por el Mariscal Antonio José de Sucre.
+
+Ocupa un área de 53.588 km2 y está dividido en 16 provincias. Se halla a 3.706 metros sobre el nivel del mar, y su capital es Oruro, en la Provincia de Cercado.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="potosi" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1><img class="ui-li-icon" src="img/bandera-potosi.jpg" style="max-width:20%; ">Potosi</h1>
+	</div>
+	<div data-role="navbar">		
+		Contenido
+        <ul data-role="navbar">	
+            <li><a href="#potosi_c">Clima</a></li>
+            <li><a href="#potosi_t">Lugares Turisticos</a></li>
+            <li><a href="#potosi_co">Donde Comer</a></li>
+         </ul> 		
+	</div>
+    <div>
+    	<ul>
+            <img class="ui-li-icon" src="img/mapa-potosi.png" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	Potosí se encuentra al pie del cerro Rico, en la Cordillera Oriental de los Andes, a 4000 metros de altura, siendo la ciudad más alta del mundo.
+
+ Por Decreto del 23 de enero de 1826, dictado por el Mariscal José de Sucre, se creó el Departamento de Potosí.
+
+La ciudad capital Potosí está ubicada en la provincia de Frías, y fue fundada el 1 de abril de 1545 por Villarroel, Zenteno, Cotamiento y Santandía con el nombre de Villa Imperial de Carlos V.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="lapaz" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1><img class="ui-li-icon" src="img/bandera-lp.jpg" style="max-width:20%; ">La Paz</h1>
+	</div>
+	<div data-role="navbar">		
+		Contenido	
+        <ul data-role="listview">	
+            <li><a href="#lapaz_c">Clima</a></li>
+            <li><a href="#lapaz_t">Lugares Turisticos</a></li>
+            <li><a href="#lapaz_co">Donde Comer</a></li>
+         </ul> 	
+	</div>
+    <div>
+    	<ul>
+           <img class="ui-li-icon" src="img/mapa-lapaz.png" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >    
+    	El Departamento de La Paz se creó 23 de enero de 1826 firmado por el Mariscal Antonio Sucre.
+
+Abarca un área territorial de 133.985 Km2. Está dividido en 20 provincias, y su población, según el censo de 2001 es de 2.350.466 habitantes, con una densidad de 18 habitantes por kilómetro cuadrado. Es, por su superficie, el tercer departamento de Bolivia.
+
+La Capital del Departamento es La Paz, en la provincia de Murillo. Fue fundada por el Capitán Alonso de Mendoza el 20 de octubre de 1543, y la denominó Nuestra Señora de la Paz.
+
+El 16 de Julio se festeja su fiesta cívica, por haber sucedido en esa fecha, en 1809, la revolución encabezada por don Pedro Domingo Murillo.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="tarija" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Tarija</h1>
+	</div>
+	<divdata-role="navbar">		
+		Contenido
+        <ul data-role="listview">	
+            <li><a href="#tarija_c">Clima</a></li>
+            <li><a href="#tarija_t">Lugares Turisticos</a></li>
+            <li><a href="#tarija_co">Donde Comer</a></li>
+         </ul> 			
+	</div>
+    <div>
+    	<ul>
+           <img class="ui-li-icon" src="img/mapa-tarija.jpg" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Tarija fue creado por Ley del 24 de septiembre de 1831, durante el Gobierno del Mariscal Andrés de Santa Cruz y Calahuamana.
+
+Está dividido en seis provincias: Arce, J. M. Avilés, Méndez, Cercado, O'Connor y Gran Chaco, ocupa una superficie de 37.623 km2 y se halla a una altitud de 1.957 metros sobre el nivel del mar.
+
+La Capital del Departamento es Tarija, ubicada en la provincia Cercado.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="chuquisaca" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Chuquisaca</h1>
+	</div>
+	<div data-role="navbar">		
+		Contenido	
+        <ul data-role="listview">	
+            <li><a href="#chuquisaca_c">Clima</a></li>
+            <li><a href="#chuquisaca_t">Lugares Turisticos</a></li>
+            <li><a href="#chuquisaca_co">Donde Comer</a></li>
+         </ul> 		
+	</div>
+    <div>
+    	<ul>
+            <img class="ui-li-icon" src="img/mapa-chuquisaca.png" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Chuquisaca fue creado por Decreto Supremo del 23 de enero de 1826, por el Mariscal Antonio José de Sucre.
+
+Ocupa un territorio de 51.524 km2 de superficie y está ubicado a unos 2.790 metros de altitud sobre el nivel del mar.
+
+Su Capital es Sucre, ubicada en la Provincia de Oropeza, ciudad que también es Capital Constitucional de la República de Bolivia. Fue fundada el 30 de noviembre de 1538 por Pedro de Anzúrez, Marqués de Campo Redondo, en las faldas de los cerros Sicasica y Churuquella. (Hay quienes afirman que la fecha de fundación de Sucre fue el 31 de agosto de 1539).
+
+Sucre fue declarada provisoriamente, Capital de Bolivia, en 1826; y pasó a ser la Capital definitiva el 12 de julio de 1834, aunque la sede del gobierno se trasladó a La Paz.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="beni" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Beni</h1>
+	</div>
+	<div data-role="navbar">	
+		Contenido		
+        <ul data-role="navbar">	
+            <li><a href="#beni_c">Clima</a></li>
+            <li><a href="#beni_t">Lugares Turisticos</a></li>
+            <li><a href="#beni_co">Donde Comer</a></li>
+         </ul> 	
+	</div>
+    <div>
+    	<ul>
+           <img class="ui-li-icon" src="img/mapa-beni.jpg" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Beni fue creado por Decreto Supremo del 18 de noviembre de 1842. 
+
+Es el segundo departamento de Bolivia, por su extensión, y ocupa el 19% del territorio del país. Ocupa una superficie de 215.564 km2.
+
+Lo forman 8 provincias: Vaca Diez, Gral. José Ballivián, Yacuma, Moxos, Mamoré, Itenez, Cercado y Marban.
+
+Su Capital es Trinidad, ubicada en la Provincia Cercado. La ciudad de la Santísima Trinidad fue fundada el 6 de junio de 1687, por el Sacerdote Jesuita  Cipriano Barace (Siya Boco).
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="pando" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Pando</h1>
+	</div>
+	<div data-role="navbar">		
+		Contenido		
+        <ul data-role="listview">	
+            <li><a href="#pando_c" >Clima</a></li>
+            <li><a href="#pando_t">Lugares Turisticos</a></li>
+            <li><a href="#pando_co">Donde Comer</a></li>
+         </ul> 	
+	</div>
+    <div>
+    	<ul>
+            <img class="ui-li-icon" src="img/mapa-pando.png" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Pando fue creado por Ley del 24 de septiembre de 1938, durante el gobierno de Germán Busch Becerra.
+Ocupa una superficie de 63.827 km2, y se encuentra a 202 metros sobre el nivel del mar.
+
+La Capital del Departamento es Cobija, ubicada en la Provincia Nicolás Suárez. Esta ciudad se fundó sobre la antigua localidad de Bahía, el 9 de febrero de 1906, con el nombre de Puerto Rico, el que fue cambiado por Cobija, el 13 de febrero de 1908 y declarada Capital departamental por Decreto del 15 de mayo de 1939.
+    </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="santacruz" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Santa Cruz</h1>
+	</div>
+    <div>
+    	<p></p>
+    </div>
+	<div data-role="navbar">	
+        <ul data-role="listview">	
+            <li><a href="#santacruz_c">Clima</a></li>
+            <li><a href="#santacruz_t">Lugares Turisticos</a></li>
+            <li><a href="#santacruz_co">Donde Comer</a></li>
+         </ul> 		
+	</div>
+    <div>
+    	<ul>
+            <img class="ui-li-icon" src="img/mapa-santacruz.png" style="max-width:50%; ">
+        </ul>
+    </div>
+    <div style="padding:1.5em;" >
+    	El Departamento de Santa Cruz fue creado mediante el Decreto Supremo del 23 de enero de 1826, por el Mariscal Antonio José de Sucre.
+
+Tiene una extensión de 370.621 km2.
+
+La Capital del Departamento es la ciudad de Santa Cruz de la Sierra, en la provincia Andrés Ibáñez. Fue fundada el 26 de febrero de 1561, por el Capitán Ñuflo de Chávez.
+
+La región posee un clima tropical húmedo.
+    </div>
+	<div data-role="footer" data-position="fixed" data-role="con">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="potosi_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="navbar">
+        <dl class="potosi">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">18 °C</dd>
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>        
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="potosi_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">    
+		<div data-role="collapsible-set">
+           	 <div data-role="collapsible" data-collapsed="false">
+                    <h3>SALAR DE UYUNI</h3>
+                    <p><img class="ui-li-icon" src="img/salaruyuni.jpg" style="max-width:50%; "></p>
+                    <p>“El Salar de Uyuni” es el más grande del mundo. Esta región semidesértica y de tierras volcánicas encierra en su interior recursos de gran importancia económica como la reserva de 9 millones de toneladas de litio y otros minerales; y paisajes de extraordinaria belleza natural.</p>
+                </div>                
+                <div data-role="collapsible">
+                    <h3>TUPIZA</h3>
+                    <p><img class="ui-li-icon" src="img/tupiza.jpg" style="max-width:50%; "></p>
+                    <p>Tupiza está enclavado en el angosto valle del río Tupiza. Se encuentra establecida actualmente en el territorio ancestral de los chichas. Este municipio posee gran riqueza paisajística, desfiladeros y curiosas formaciones rocosas lo acompañan en su entorno.</p>
+                </div>            
+        </div>	                    
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="potosi_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>RESTAURANTE MUSEO - SAN MARCOS
+Restaurante de Comida Internacional en Potosí. Museo.
+www.hca-potosi.com/sanmarcos
+Dirección: c. La Paz Nro. 1565 (Central) - Potosí, POTOSÍ
+Teléfono: (591-2) 6226717</p>
+		<p>SALTEÑERIA IMA SUMAJ
+Salteñerias
+Dirección: Bustillos Nro. 987 - Potosí, POTOSÍ
+Teléfono: (591-2) 6222160 </p>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="tarija_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+        <dl class="caja">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">36 °C</dd>
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="tarija_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">			
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>San Lorenzo</h3>
+                <p><img class="ui-li-icon" src="img/sanlorenzo.jpg" style="max-width:50%; "></p>
+                <p>El pueblo de San Lorenzo o Tarija La Vieja, se caracteriza por su arquitectura colonial con casonas que tienen hermosos balcones. Representa además uno de los sentimientos más profundos del tarijeño y tarijeña por la historia y tradición. Se encuentra a 15 kilómetros al norte de la ciudad de Tarija.</p>
+            </div>            
+            <div data-role="collapsible">
+                <h3>Yacuiba</h3>
+                <p><img class="ui-li-icon" src="img/yacuiba.jpg" style="max-width:50%; "></p>
+                <p>Yacuiba es la capital de la Provincia Gran Chaco, se encuentra a 3 kilómetros de la frontera con Argentina al norte de San José de Pocitos. Este municipio es bastante importante por el centro de comercio entre ambos países. Al otro lado de la frontera se encuentra Profesor Salvador Mazza en la provincia de Salta.</p>
+            </div>            
+        </div>	        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="tarija_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>EL MARQUÉS RESTAURANTE - EVENTOS
+Café - Restaurante - Eventos “El Marqués” especialista en comida internacional en Tarija, Bolivia.
+www.elmarquesrestaurant.com
+Dirección: c. La Madrid Nro. 372, Plaza Principal (Central) - Tarija, TARIJA
+Teléfono: (591-4) 6637987 (591-4) 6676080 (591) 72991143</p>
+		<p>CROCAN POLLO
+Crocan Pollo es una empresa dedicada a brindar los mejores servicios alimenticios en el rubro de comida rápida en Tarija, Bolivia.
+www.crocanpollo.com
+Dirección: Av. Jaime Paz Nro. 1012 a Media cuadra de la Terminal (Terminal) - Tarija, TARIJA
+Teléfono: (591-4) 6638999 </p>	        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="chuquisaca_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+        <dl class="caja">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">25 °C</dd>
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+        <script>
+            var datos = Clima.datos('sucre');
+            alert(datos.temperatura);
+            $('#chuquisaca_c #temperatura').val(datos.temperatura);
+            $('#chuquisaca_c #humedad').val(datos.humedad);
+            $('#chuquisaca_c #presion').val(datos.presion);
+            $('#chuquisaca_c #fecha').val(datos.fecha); 
+        </script>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="chuquisaca_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">		
+        <div data-role="collapsible-set">        
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>CIUDAD DE SUCRE</h3>
+                <p><img class="ui-li-icon" src="img/ciudadsucre.jpg" style="max-width:50%; "></p>
+                <p>Sucre, Capital del Departamento de Chuquisaca, es también la capital constitucional del Estado Plurinacional de Bolivia; ubicada al sur del país, posee un clima agradable del que se goza todo el año. Es conocida como la ciudad de los 4 nombres “Charcas”, “La Plata”, “Chuquisaca”, “Sucre”.</p>
+            </div>            
+            <div data-role="collapsible">
+                <h3>PARQUE CRETÁCICO</h3>
+                <p><img class="ui-li-icon" src="img/parquecetatico.jpg" style="max-width:50%; "></p>
+                <p>A  pocos minutos de la ciudad de Sucre, se encuentra el yacimiento de huellas de dinosaurios más extenso del mundo. El imponente farallón de Cal Orck’o (cerro de cal) revela secretos de diversas especies de estos fabulosos animales, desaparecidos hace 68 millones de años.</p>
+            </div>            
+        </div>	        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="chuquisaca_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>CASA DEL CAMBA URUBÓ
+Restaurant de platos típicos del Oriente. El sabor típico del Oriente boliviano. Santa Cruz, Bolivia
+Dirección: Lado de la entrada a la Urbanización Villa Bonita - Santa Cruz de la Sierra, SANTA CRUZ
+Teléfono: (591-3) 3703013 </p>
+		<p>EL HUERTO RESTAURANTE
+Restaurante. 23 años ofreciendo la mejor comida nacional e internacional. Un ambiente único, moderno y excluisvo para catar los mejores vinos y degustar la última oferta gastronómica en Sucre, Bolivia.
+www.elhuertorestaurante.net
+Dirección: c. Ladislao Cabrera Nro. 86 (San Matias) - Sucre, CHUQUISACA
+Teléfono: (591-4) 6451538 </p>	        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="santacruz_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+        <dl class="caja">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">31 °C</dd>
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+        <script>
+            var datos = JSON.parse(Clima.datos('santacruz'));
+            $('.caja #temperatura').val(datos.temperatura.toString());
+            $('.caja #humedad').val(datos.humedad);
+            $('.caja #presion').val(datos.presion);
+            $('.caja #fecha').val(datos.fecha); 
+        </script>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="santacruz_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">	
+		<div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>MISIONES JESUITICAS</h3>
+                 <p><img class="ui-li-icon" src="img/misionjesuita.jpg" style="max-width:50%; "></p>
+                <p>Este destino turístico de gran riqueza cultural e histórica, se ubica en la serranía oriental del Departamento de Santa Cruz, a unas seis horas de la capital. Su valor se manifiesta principalmente en la arquitectura de los templos; de estilo barroco mestizo.</p>
+            </div>            
+            <div data-role="collapsible">
+                <h3>EL PANTANAL</h3>
+                 <p><img class="ui-li-icon" src="img/elpantanal.jpg" style="max-width:50%; "></p>
+                <p>El Pantanal Boliviano se inicia en Puerto Suárez y se extiende hasta Puerto Busch en el Departamento de Santa Cruz; es una extensa llanura muy lisa en la parte superior del río Paraguay, su temperatura varía de 12°C a 24 °C, con cambios estacionales a veces significativos.</p>
+            </div>            
+            <div data-role="collapsible">
+                <h3>BIOCENTRO</h3>
+                 <p><img class="ui-li-icon" src="img/biocentro.jpg" style="max-width:50%; "></p>
+                <p>24 hectáreas, rodeado de plantas exóticas, bosques exuberantes y animales propios de la región. Un lugar en plena armonía entre el hombre y la naturaleza, en el que encontrará una variedad de flora y fauna en su hábitat natural.</p>
+            </div>            
+        </div>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="santacruz_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>BUGANVILLAS HOTEL SUITES & SPA * * * * *
+Hotel Suites & Spa en Santa Cruz de la Sierra, Bolivia. Hotel cinco estrellas en Santa Cruz.
+www.hotelbuganvillas.com
+Dirección: Av. Roca y Coronado Nro. 901 - Santa Cruz de la Sierra, SANTA CRUZ
+Teléfono: (591-3) 3551212 </p>
+		<p>CASA DEL CAMBA URUBÓ
+Restaurant de platos típicos del Oriente. El sabor típico del Oriente boliviano. Santa Cruz, Bolivia
+Dirección: Lado de la entrada a la Urbanización Villa Bonita - Santa Cruz de la Sierra, SANTA CRUZ
+Teléfono: (591-3) 3703013 </p>	        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="pando_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+        <dl class="caja">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">31 °C</dd>
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+        <script>
+            var datos = Clima.datos('cobija');
+            $('#temperatura').append(datos.temperatura);
+            $('#humedad').append(datos.humedad);
+            $('#presion').append(datos.presion);
+            $('#fecha').append(datos.fecha); 
+        </script>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="pando_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">     
+		<div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Las Cachuelas</h3>
+                <p><img class="ui-li-icon" src="img/cachuelas.jpg" style="max-width:50%; "></p>
+                <p>Se encuentran sobre el río Abuná, entre las provincias Teniente General F. Román y Filadelfia, a escasas dos horas de la vía fluvial por deslizador..</p>
+             </div>                
+             <div data-role="collapsible">
+                <h3>Las Piedras</h3>
+                <p><img class="ui-li-icon" src="img/laspiedras.jpg" style="max-width:50%; "></p>
+                <p>Esta población ubicada cerca del río Beni, en la parte Sur este del Departamento, muy fácil de acceder desde la ciudad de Riberalta, en el Departamento del Beni, ofrece elementos arqueológicos que aún hoy esperan por ser develados. Alrededor del pueblo existe un muro perimetral que algunas estudiosos han descrito como muros incas. Es posible encontrar restos de cerámica, no estudiada.</p>
+             </div>            
+        </div>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="pando_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>Curichi Del Cocodrilo
+Restaurantes, Restaurantes de comida nacional, Salones para recepciones
+Av. 16 De Julio N° 181 - 183 | Cobija, Pando</p>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="beni_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+		        <dl class="caja">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">34 °C</dd>
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+        <script>
+            var datos = Clima.datos('trinidad');
+            $('#temperatura').append(datos.temperatura);
+            $('#humedad').append(datos.humedad);
+            $('#presion').append(datos.presion);
+            $('#fecha').append(datos.fecha); 
+        </script>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="beni_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">			
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>Laguna Suárez</h3>
+                <p><img class="ui-li-icon" src="img/lagunazuares.jpg" style="max-width:50%; "></p>
+                <p>Se encuentra 5 Km. de Trinidad, hacia el sur. Es una laguna artificial, que fué construida por la antigua civilización Paititiana que la llamó Socoreno (Laguna de Animales), actualmente tiene el nombre de Laguna Suárez, debido a que fué adquirida por la firma Suárez Hnos., que tiene hermosa vista natural, lo que le da un enorme interés turístico.</p>
+            </div>            
+            <div data-role="collapsible">
+                <h3>Chuchini</h3>
+                <p><img class="ui-li-icon" src="img/chuchini.jpg" style="max-width:50%; "></p>
+                <p>Este centro turístico esta ubicado a 14 Km. al noreste de la ciudad de Trinidad, Chuchini cuenta con lagunas y ríos para la pesca y navegación, como el Ibare, que desemboca al río Mamoré, al mismo tiempo cuenta con bosques para paseos y cacerías. Lo que llama la atención son las Lomas pre-coloniales donde se encuentran riquezas arqueológicas que atraen al turista extranjero. Chuchini significa "guarida del tigre"..</p>
+            </div>          
+   		 </div>	        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="beni_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>Restaurante Jacaranda 
+Excelencia en servicios, en pleno centro de la ciudad de Trinidad.
+Dirección: La Paz entre Pedro de La Rocha y 18 de Noviembre Teléfono: 4622400</p>        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="cochabamba_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+         <dl class="cochabamba">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">30 °C</dd>
+
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+
+        <script>
+            var datos = Clima.datos('cochabamba');
+
+            $('.cochabamba #temperatura').append(datos.temperatura);
+            $('.cochabamba #humedad').append(datos.humedad);
+            $('.cochabamba #presion').append(datos.presion);
+            $('.cochabamba #fecha').append(datos.fecha); 
+        </script>
+
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="cochabamba_t" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed">
+            <h1>Lugares Turisticos</h1>
+        </div>
+        <div data-role="content">	
+            <div data-role="collapsible-set">
+    
+            <div data-role="collapsible" data-collapsed="false">
+            	<h3>VILLA TUNARI</h3>
+                 <p><img class="ui-li-icon" src="img/villatunari.jpg" style="max-width:50%; "></p>
+            	<p>El Municipio de Villa Tunari es una invitación ideal a pasar vacaciones y fines de semana disfrutando de sus ríos y vegetación, que lo convierten en un lugar paradisíaco, apto para el descanso y la aventura. Este municipio cuenta con una variada infraestructura hotelera y servicios turísticos.</p>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>PARQUE NACIONAL CARRASCO</h3>
+                <p><img class="ui-li-icon" src="img/parquecarrasco.jpg" style="max-width:50%; "></p>
+                <p>Situado en la cuenca amazónica del Chapare, se constituye en el paraíso del explorador y de los aventureros que practican deportes extremos como el rafting, canopy, rappel, parapente y otros. Dentro de su superficie se aprecia paisajes de gran belleza..</p>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>PUERTO VILLARROEL</h3>
+                <p><img class="ui-li-icon" src="img/puertovillarroel.jpg" style="max-width:50%; "></p>
+                <p>Esta población se encuentra a una altura de 180 m.sn.m. Antiguamente, la sede de este municipio se encontraba en las orillas del río Ichilo. Las migraciones a esta zona, posibilitaron el crecimiento demográfico de otras comunidades, tal es el caso de Ivirgarzama.</p>
+            </div>
+        
+  	  </div>	
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="cochabamba_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>EL PALACIO DEL SILLPANCHO
+Tradición Cochabambina. Comida Típica en Cochabamba. Comida criolla. Especialidad en Sillpanchos
+www.elpalaciodelsillpancho.com
+Dirección: c. Baptista Nro. 434 (Central) - Cochabamba, COCHABAMBA
+Teléfono: (591-4) 4222732 </p>
+		<p>RESTAURANTE MACHU PICCHU
+Cevichería, Comida Peruana
+Dirección: Av. Libertador Bolivar Nro. 1172 - Cochabamba, COCHABAMBA
+Teléfono: (591-4) 4247108 (591) 79555924</p>
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="lapaz_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+        <dl class="lapaz">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura">19 °C</dd>
+
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+
+        <script>
+            var datos = Clima.datos('lapaz');
+
+            $('.lapaz #temperatura').append(datos.temperatura);
+            $('.lapaz #humedad').append(datos.humedad);
+            $('.lapaz #presion').append(datos.presion);
+            $('.lapaz #fecha').append(datos.fecha); 
+        </script>
+
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="lapaz_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">	
+		<div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+           		 <h3>VALLE DE LA LUNA</h3>
+                 <p><img class="ui-li-icon" src="img/valleluna.jpg" style="max-width:50%; "></p>
+            	<p>El Valle de La Luna, es un lugar que desafía la imaginación del visitante, generándole la sensación de estar en un pequeño páramo de la luna. Sus formas son producto de la erosión y asemejan cráteres volcánicos.</p>
+            </div>
+            
+            <div data-role="collapsible">
+                <h3>SORATA</h3>
+                <p><img class="ui-li-icon" src="img/sorata.jpg" style="max-width:50%; "></p>
+                <p>Sorata es un valle de clima templado y paisaje maravilloso, situado al pie del nevado Illampu. Existen varios paseos por los alrededores del pueblo, como el que va al seminario de Espada y a las pequeñas cascadas del río San Cristóbal.</p>
+			</div>
+            
+            <div data-role="collapsible">
+                <h3>MUELA DEL DIABLO</h3>
+                <p><img class="ui-li-icon" src="img/mueladeldiablo.jpg" style="max-width:50%; "></p>
+                <p>Gran mirador en las afueras de la ciudad, con una elevación rocosa monolítica natural de 150 metros de altura, que se destaca en el entorno paisajístico de la zona sur de La Paz. Tiene forma de una gran muela, siendo esa la razón de su nombre, además de leyendas del lugar.</p>
+            </div>
+            
+            <div data-role="collapsible">
+            <h3>PARQUE NACIONAL MADIDI</h3>
+            	 <p><img class="ui-li-icon" src="img/parquemadi.jpg" style="max-width:50%; "></p>
+            	<p>El Parque Nacional y Área Natural de Manejo Integrado Madidi es un destino de incomparable belleza natural donde 3,235 especies conviven en perfecta armonía con el ser humano. Es sin duda, el área protegida de mayor relevancia ecológica y biogeográfica de Bolivia.</p>
+            </div>
+        		
+		</div>	
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="lapaz_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>LA TRANQUERA
+Restaurantes en La Paz. Gastronomía en Bolivia
+www.caminorealaparthotel-spa.com
+Dirección: c. Capitán Ravelo Nro. 2123 - La Paz, LA PAZ
+Teléfono: (591-2) 2441515 (591-2) 2441103 (591) 72066000</p>
+		<p>RESTAURANTE “VICUÑITA DE PLATA”
+Restaurante de comida Internacional y Nacional. Especialidad Flambes.
+www.hotelgloria.com.bo
+Dirección: c. Potosí Nro. 909, Hotel Gloria (Central) - La Paz, LA PAZ
+Teléfono: (591-2) 2407070 </p>	
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="oruro_c" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Clima</h1>
+	</div>
+	<div data-role="content">	
+		  <dl class="oruro">
+            <dt>Temperatura ambiente</dt>
+            <dd id="temperatura"19 °C></dd>
+
+            <dt>Humedad</dt>
+            <dd id="humedad"></dd>
+
+            <dt>Presion</dt>
+            <dd id="presion"></dd>
+
+            <dt>Fecha de la medida</dt>
+            <dd id="fecha"></dd>
+        </dl>
+
+        <script>
+            var datos = Clima.datos('oruro');
+
+            $('.oruro #temperatura').val(datos.temperatura);
+            $('.oruro #humedad').val(datos.humedad);
+            $('.oruro #presion').val(datos.presion);
+            $('.oruro #fecha').val(datos.fecha); 
+        </script>
+
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="oruro_t" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Lugares Turisticos</h1>
+	</div>
+	<div data-role="content">	
+		
+        
+        
+        
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+<div data-role="page" id="oruro_co" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Donde Comer</h1>
+	</div>
+	<div data-role="content">	
+		<p>SUPER HAMBURGUESAS
+Heladería, confitería, restaurant, comida rápida, cine
+Dirección: c. Bolívar entre La Plata y Soria Galvarro - Oruro, ORURO
+Teléfono: (591-2) 25255129 (591-2) 25257302 </p>
+		<p>HOTEL OPORTO * * *
+Hotelería. Hospedaje. Centro de Convenciones Hoteles en Oruro y Restaurante.
+www.hoteloportobolivia.com
+Dirección: Av. Brasil Nro. 5021 esq. 21 de Enero (Terminal) - Oruro, ORURO
+Teléfono: (591-2) 5282455 (591-2) 5279456 (591) 71183934</p>	
+        		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Made in Bolivia</h4>
+	</div>
+</div>
+
+</body>
+</html>
